@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <pre style="color: crimson;font-size: 20px;">
+                1.Var 2.Let 3.Const
+
+
+                var
+                var is a global or Functional Scoped
+                var can be reassigned
+                var can be redeclared
+                var can be modified later
+
+
+                var a=10;
+                var a=20;
+                console.log(a);
+                
+                
+                Let
+                Let  is a Block  Scoped
+                let cannot be reassigned
+                let cannot  be redeclared
+                let can be modified later
+                
+                let a=10;
+                let a=20;    we cannot redeclare, but we can modify like a=20;
+                console.log(a);  
+                
+                Const
+                Const   is a Block  Scoped
+                const cannot be reassigned
+                Const cannot  be redeclared
+                Const  cannot  be modified later
+
+                const a = 10; (Here we cannot redeclare, reassign or modify)  
+                </pre>
+            </div>
+            <div style="color: rgb(5, 104, 107); font-size: 20px;">
+                There are two kinds of Execution Context in JavaScript: GEC & FEC
+
+                Sets up memory space for variables and functions defined globally
+                
+                Creates a Global Variable object that stores function and variables declarations.
+                
+                
+            </div>
+
+            <div>
+                <pre style="color: blueviolet;font-size: 21px;">
+                    const age = 45;
+                    if(age<30){
+                    console.log("Adult")
+                    }else{
+                    console.log("old")
+                    }
+                </pre>
+
+                <pre style="color: blue;font-size: 21px;">
+                    const a = 31;
+                    var b = a<30?"Adult":"Old";
+                    console.log(b);
+                </pre>
+            </div>
+            <div style="color: black;font-size: 20px;">
+                Hoisting
+
+                Hoisting is a default Javascript Mechanism where our variables and Functions declarations
+                are moved to top of their Scope before code execution ,only declrations are hoisted not 
+                intilazations.
+            </div>
+
+            <div>
+                <pre style="color: chocolate;font-size: 18px;">
+                    const age = 19;
+                    if(age<15){
+                        console.log("Young")
+                    }else if(age>15 && age<30){
+                        console.log("Adult")
+                    }else{
+                        console.log("Old")
+                    }
+                </pre>
+            </div>
+            <div>
+                <pre style="color: cornflowerblue;font-size: 20px;">
+                    const a = 1;
+
+                    switch (a) {
+                        case 1:
+                            console.log("Monday");
+                            break;
+                        case 2:
+                            console.log("Tuesday");
+                            break;
+                        case 3:
+                            console.log("Wednesday");
+                            break;
+                        case 4:
+                            console.log("Thursday");
+                            break;
+                        case 5:
+                            console.log("Friday");
+                            break;
+                        case 6:
+                            console.log("saturday");
+                            break;
+                        case 7:
+                            console.log("sunday");
+                            break;
+                        default:
+                            console.log("error");
+                            break;
+                    }
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
